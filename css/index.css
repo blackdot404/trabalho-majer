@@ -20,7 +20,7 @@ body {
 
 header {
   grid-column: 1/4;
-  background: url(./logo.png) no-repeat;
+  background: url(./img/logo.png) no-repeat;
   background-size: 22vh;
   background-position: right 0.2px;
   background-color: #0b192e;
@@ -50,6 +50,11 @@ main {
   padding-left: 30%;
   padding-bottom: 7px;
   padding-top: 6px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
 }
 
 #asiLeft .noBorder {
