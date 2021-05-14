@@ -9,22 +9,41 @@ body {
   background: #1c475e;
   color: #fbfbfb;
   font-family: 'Noto Sans', sans-serif;
-  font-style: italic;
 }
 
 .container {
   display: grid;
-  grid-template-columns: 1fr 3fr 1fr;
+  grid-template-columns: 1fr 5fr 1fr;
   grid-template-rows: 20vh 73vh 7vh;
 }
 
 header {
   grid-column: 1/4;
-  background: url(./img/logo.png) no-repeat;
+  /*background: url(./img/logo.png) no-repeat; */
   background-size: 22vh;
-  background-position: right 0.2px;
   background-color: #0b192e;
 }
+
+header .logo {
+  margin-left: auto;
+  margin-right: auto;
+  width: 800px;
+  font-style: italic;
+}
+
+header .imgLogo {
+  position: relative;
+  float: left;
+}
+
+header .textLogo {
+  position: relative;
+  float: right;
+  padding-top: 45px;
+  padding-right: 150px;
+  text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.34);
+}
+
 
 main {
   grid-column: 2/3;
@@ -47,14 +66,24 @@ main {
   font-size: 20px;
   align-self: center;
   text-align: justify;
-  padding-left: 30%;
+  padding-left: 15%;
   padding-bottom: 7px;
   padding-top: 6px;
 }
 
-a {
+#asiLeft a {
   text-decoration: none;
   color: white;
+}
+
+#asiLeft .menuBorder:hover {
+  background-color: black;
+  transition: 0.9s;
+}
+
+#asiLeft .noBorder:hover {
+  background-color: black;
+  transition: 0.9s;
 }
 
 #asiLeft .noBorder {
@@ -62,7 +91,7 @@ a {
   font-size: 20px;
   align-self: center;
   text-align: justify;
-  padding-left: 30%;
+  padding-left: 15%;
   padding-bottom: 7px;
   padding-top: 6px;
 }
