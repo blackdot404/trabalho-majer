@@ -50,18 +50,32 @@ main {
   background-color: #2a2a2a;
 }
 
+main .products {
+  margin-left: auto;
+  margin-right: auto;
+  width: 800px;
+}
+
 main .product-box {
   line-height: 2px;
   position: relative;
   margin-left: 15px;
   background-color: white;
   width: 250px;
-  border-radius: 3px;
+  border-radius: 5px;
   color: black;
+  float: left;
+  margin-top: 50px;
+  transition: 0.5s;
+}
+
+main .product-box:hover {
+  box-shadow: 2px 2px 3px 1px rgba(0, 0, 0, 0.2);
 }
 
 main .product-box img {
   width: 250px;
+  border-radius: 5px;
 }
 
 main .product-box h4,
@@ -70,7 +84,24 @@ p {
   font-size: 12px;
 }
 
-main .product-box input {}
+main .product-box input {
+  cursor: pointer;
+  border: 2px solid #1c475e;
+  background-color: #0b192e;
+  color: white;
+  text-transform: uppercase;
+  padding: 10px;
+  width: 100%;
+  font-weight: bold;
+  letter-spacing: 1px;
+  border-radius: 2px;
+  transition: 0.9s;
+}
+
+main .product-box input:hover {
+  background-color: #1c475e;
+}
+
 
 #asiRight {
   grid-column: 3/4;
