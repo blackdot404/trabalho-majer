@@ -50,6 +50,28 @@ main {
   background-color: #2a2a2a;
 }
 
+main .product-box {
+  line-height: 2px;
+  position: relative;
+  margin-left: 15px;
+  background-color: white;
+  width: 250px;
+  border-radius: 3px;
+  color: black;
+}
+
+main .product-box img {
+  width: 250px;
+}
+
+main .product-box h4,
+p {
+  padding-left: 5px;
+  font-size: 12px;
+}
+
+main .product-box input {}
+
 #asiRight {
   grid-column: 3/4;
 }
